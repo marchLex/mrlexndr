@@ -1,0 +1,105 @@
+body  { font-family: "Arial", "Helvetica", sans-serif; margin:0; padding:0; font-size: 15px; overflow-y: scroll;  }
+a {color: MidnightBlue; border:none; outline:none;} a:hover{color: darkred; border:none; outline:none;} input:focus{outline:none;}a img {border:none; outline:none;} .container{width:96%; max-width:1600px; margin: 0 auto; padding: 0; clear:both; } @media screen and (max-width: 800px) {.container{margin: 0 auto;}}
+
+/*-------------Левое подменю--------------------------------------*/
+#left {float:right; display: block; vertical-align: top; width:240px; margin: 0 0 0; padding:0 0 0 0px; background:rgba(0, 0, 0, 0); }
+#left ul { list-style: none; margin: 0; padding:0; }#left ul li {display: block; }
+#left ul li.head{padding: 15px 2px 5px; margin:12px 0 1px; font-weight:bold; font-size:18px; color:rgba(30,50,70,1); background:rgba(0, 0, 0, 0); text-align:left; }
+#left ul li a {display: block; margin: 0; padding: 9px 2px; border-bottom:1px solid white;  text-decoration:none; color:#39383a; font-size:16px; font-weight:300;}
+#left ul li a.active, #left ul li a.active:hover {cursor: pointer; color:black; background:rgba(0, 0, 0, 0.08);}
+#left ul li a:hover { border-right-color:SlateGray; color:black; background:#eaeaea;}
+#left ul li a img {display: inline-block; vertical-align: middle; width:17px; margin:0 11px 0 3px;}
+
+/*--Кнопка НАВЕРХ--*/#back-top {position: fixed;top: 50px;  z-index: 99999; left:2%;} #back-top a {display: block;text-align: center;font-size: 30px;text-decoration: none;color: whitesmoke;  padding:7px 7px; line-height:100%; background:silver; -webkit-transition: 1s;	-moz-transition: 1s;transition: 1s;} #back-top a:hover {color: white; -webkit-transition: 1s;	-moz-transition: 1s;transition: 1s; background:dimgray;}
+/*-- Последние посты--*/
+#left  h5 {font-size: 14px; font-weight:bold; padding:0; margin:10px 0;}
+.latestposts {margin:55px 0 20px; padding:8px; border:1px solid silver; }
+.posts a {display: block; font-size: 12px; margin:8px 0;}
+/*--Кнопка Соцсетей--*/
+#left .socnet {text-align: center; margin:15px 0;}
+#left a.fs {background:silver; display: inline-block; vertical-align: middle; margin:2px 1px 0; border:none; text-align: center; padding:9px 7px 0; width:20px; height:24px; color:white; text-decoration:none; font-size: 15px; font-weight: bold; border-radius:22px; line-height:15px;}
+#left a.fs.vk:hover {background:#4d7198;} #left a.fs.tw:hover  {background:#1faee9;} #left a.fs.ya:hover  {background:whitesmoke; color:red; box-shadow: inset 0px 0px 2px silver;} #left a.fs.f:hover  {background:#4d7198;}  #left a.fs.gp:hover  {background:darkred; }
+/*--Кнопка Подписка--*/
+#left  .semail {display:block; text-align: center; padding:12px 10px 12px; margin:70px 0 10px; background:whitesmoke; }
+#left  .semail p {font-size:11px; color:dimgray; margin:10px 0 5px; font-style:italic;}
+#left  .semail input[type="text"], #left  .semail input[type="submit"]{ display:inline-block; vertical-align: middle;  background: white; opacity: 0.9; filter: alpha (opacity: 90); border:none; outline:none; height:25px; width:80%; max-width:170px; padding:2px 5px;  transition: All 0.5s ease; font:size:15px;}
+#left .semail input[type="submit"]{background: black; color:white; height:29px; width:15%; max-width:40px; padding:2px 10px 6px; font-size:15px; cursor: pointer; opacity: 0.7; filter: alpha (opacity: 70);}
+#left  .semail input:hover {opacity: 0.95; filter: alpha (opacity: 95);  -webkit-transition: All 0.5s ease; -moz-transition: All 0.5s ease; -o-transition: All 0.5s ease; -ms-transition: All 0.5s ease; transition: All 0.5s ease;}
+#left  .semail input:focus {opacity: 1; filter: alpha (opacity: 100);}
+
+@media screen and (max-width: 800px) {
+#left {width:55px; padding:0; margin:0;}#left ul li {text-align:center;} #left ul li a {overflow: hidden; font-size: 8px; height:53px; padding:0; border:1px solid silver; margin-top:1px;}
+#left ul li a img {display: block; margin:2px auto 0; width:24px;}#left ul li.head {font-size: 12px; margin-top:0px; }
+#left .semail, #left .latestposts, .bigleft {display:none;}
+}
+
+/*--Для экранов менее 450px--*/ #openmenu { display:none; }
+#openmenu.subact{display:block; left:202px; -webkit-transition: All 0.1s ease; -moz-transition: All 0.1s ease; -o-transition: All 0.1s ease; -ms-transition: All 0.1s ease; transition: All 0.1s ease; background: rgba(70, 130, 180, 0.7); }
+
+@media screen and (max-width: 450px) {
+#openmenu { display:block; position:fixed; top:89px; left:-19px; font-size: 13px; padding:4px 6px; background: rgba(70, 130, 180, 0.3); text-align:center; -webkit-transform: rotate(90deg);  -moz-transform: rotate(90deg); color:white; cursor:pointer; z-index:1000; -webkit-transition: All 0.5s ease; -moz-transition: All 0.5s ease; -o-transition: All 0.5s ease; -ms-transition: All 0.5s ease; transition: All 0.5s ease;}
+#openmenu:hover {-webkit-transition: All 0.1s ease; -moz-transition: All 0.1s ease; -o-transition: All 0.1s ease; -ms-transition: All 0.1s ease; transition: All 0.1s ease; background: rgba(70, 130, 180, 0.9); color:white; }
+#left {display:none; position:fixed; top:0px; left:0px; float:left;  height:96%; overflow-y: auto; background:white; vertical-align: top; width:220px; margin: 0 0 0 0; padding:3% 0px; z-index:1000; box-shadow: 0 0 15px black;}
+#left.subact {display:block; }
+#left ul { list-style: none; margin: 0; padding: 0; }
+#left ul li {text-align:left;} 
+#left ul li.head{padding: 6px 7px 6px; margin:17px 0 0; font-weight:bold; font-size:14px; color:black; border-bottom:1px solid white; }
+#left ul li a {display: block; margin: 0; font-size: 12px; padding: 10px 3px; height:auto; border:none; border-bottom:1px solid white;}
+#left ul li a:hover { border-right-color:none; color:black; background:#e5e5e5;}
+#left ul li a img {display: inline-block; vertical-align: middle; width:17px; margin:0 10px 0 0;}
+/*--Наверх--*/ #back-top { bottom: 50px; top:auto; left:1%} #back-top a {font-size: 23px;  width:25px; height:25px; padding:5px 3px 1px; border-radius:30px; opacity: 0.5; filter: alpha (opacity: 50); } #back-top a:hover { opacity: 1; filter: alpha (opacity: 100); }
+/*--Соцсети--*/#left .socnet {display: none;}
+}
+
+/*-------------Основной блок--------------------------------------*/
+#main  {display: block; vertical-align: top;  background: white; margin: 0 auto; padding:0 295px  20px 15px; line-height: 160%; font-weight:300; max-width:760px;} #main img{max-width:100%;}
+/*--Заголовки--*/#main h1 {margin:0 0 12px; padding:17px 0 12px; font-size: 28px; color:#333239; background:none; font-weight:normal; border-bottom: 1px solid transparent; text-align:center; font-weight:500; line-height: 150%; }#main h2 {display: inline-block; width:100%; clear:both; color:black; padding: 15px 0 3px; border-bottom:1px solid black; margin:5px 0 2px; font-size: 28px; font-weight:300; line-height: 160%; } #main h2 a { display: inline-block; text-decoration: none; clear:both; color:black;}#main h3 {color: black; font-size: 22px; margin:25px 0 0 0; padding: 0; font-weight: normal; line-height: 160%; }#main p{margin:15px 0 30px; font-size:18px; line-height: 27px;} #main b {font-weight:500;} #main ul, #main ol {font-size:18px;} #main ul li, #main ol li {margin-top:10px;}
+
+/*--Правила и иконки--*/#main .prove {display: inline-block; width:90%; clear:both; margin:20px 0 0; padding:10px 5%; background: whitesmoke; text-align:center; border:1px solid silver; font-size: 13px; }#main .prove div {display: inline-block; vertical-align: middle; padding:0px 10px; margin:5px 0; border-left:1px solid gray; border-right:1px solid gray;} #main p.introduction { padding: 15px; background:rgba(0,0,0,0.03); font-weight:300; font-size: 19px;} p#autor{text-align: center; padding:7px 10px 15px; border-top:1px solid #333239; font-style: italic; clear:both;}
+hr{display: block; background:#333239; height:1px; border:none;}
+.dotted a{display: block; text-align:center; padding:20px 5px; margin:10px 0; border:4px dotted silver; text-decoration:none; font-size:17px; background:ghostwhite;}
+.rule {display: block; padding:10px 3%; margin:10px 0; text-decoration:none; font-size:120%; border-left:3px solid #333239;}
+.zadacha {padding: 25px 10px 30px; margin:10px 0;  background: whitesmoke url('../images/icons/task.png') no-repeat 99% 96%; border:1px solid LightGray;  text-align:center;}
+.citata{background: url('../images/icons/citata.png') no-repeat left center; padding:15px 15px 15px 50px; font-style:italic;}
+.case {background: url('../images/icons/case.png') whitesmoke no-repeat 10px center; padding:15px 15px 15px 65px; font-size:80%;}
+.regim{background: url('../images/icons/regim.png') no-repeat left center; padding:15px 15px 15px 55px; font-style:italic;}
+.numb {max-width:15px; padding:5px 10px; border:3px solid #18171d;  border-radius: 30px; margin:25px auto 10px; font-size:25px; color:#18171d; font-weight:bold; line-height: 100%;}
+@media screen and (max-width: 800px) {#main {margin: 0 55px 0 0 ; padding:0 4%;} #main p{} #main p.introduction {} #main h1 {font-size: 28px;} #main h2{font-size:24px; text-align:center;} #main .prove { } #main .prove div {display: block; margin:20px 0; border:none;} #main ul {} .dotted a{}}
+.otvet {display:inline-block; color: black;padding: 4px 30px; text-decoration:none; border-radius: 5px; border:1px solid Gainsboro; margin:10px auto; background: whitesmoke linear-gradient(to bottom, whitesmoke, Gainsboro); cursor:pointer;} .otvet:hover {background: whitesmoke; border:1px solid steelblue; box-shadow:0 0 5px steelblue;}
+.gotogame {display:block; color: black;padding: 20px 35px; text-decoration:none; border-radius: 5px; border:1px solid steelblue; margin:20px auto; background: whitesmoke linear-gradient(to bottom, whitesmoke, Gainsboro); width:80%; max-width:520px; font-size:20px; text-align:center;} .gotogame:hover {color:black; background: Gainsboro; cursor: pointer; border:1px solid dimgray; box-shadow: 0 0 9px lightsteelblue;}
+@media screen and (max-width: 450px) { #main {margin: 0 ;} }
+/*--Видео адаптивные--*/
+iframe[allowfullscreen]{width:100%; height:350px; max-width: 500px;}@media screen and (max-width: 800px) {iframe[allowfullscreen]{height:300px;}}@media screen and (max-width: 400px) {iframe[allowfullscreen] { height:200px;}}
+/*--Скрытие данных при отключении js--*/.outbe{display:none;}.onbe{display: block;}
+/*--Подсказка--*/
+.open-podskazka {border-bottom: 1px dashed black; position: relative; cursor: help; outline:none; }
+.open-podskazka.vopr{display:inline-block; vertical-align: middle; border:none; background:whitesmoke; text-align:center; padding: 2px 5px; border-radius:10px; font-weight:bold; color:gray; line-height:100%; font-size:10px; margin-bottom:2px;} .open-podskazka.vopr:hover {color:black;}
+.podskazka {display:none; position: absolute; background:white; min-width:220px; max-width:400px; border: 1px solid gray; box-shadow:0 0 10px black; padding:8px 8px; top:120%; left:-110px; z-index:999; border-radius:0px; font-weight:normal; color:black; background:white;  font-size: 14px; font-style:normal; line-height: 140%; text-align:left;}
+@media screen and (max-width: 450px) { .podskazka  {position: fixed; top:auto; margin:0; left:10%; top:40%; width:80%;} }
+
+/*-------------Статистика под игрой--------------------------------------*/
+h2#statpoigre {text-align:center; font-weight:normal; font-size:30px; padding:0; margin:10px 0; border:none;}
+#braingame_topgamedata .half {display:inline-block; width:45%; padding:10px 1%; margin:10px 1%; text-align:center; vertical-align:middle; line-height:100%;}
+#toptree {background: url('/images/main/topers.png') center 102px no-repeat; background-size: auto; height:180px; }
+#second, #first, #third {display:inline-block; vertical-align:top; padding:0px 1px; font-size:11px; text-decoration:none;text-align:center; max-width:127px; width:30%; font-weight:bold; }
+#toptree em {font-weight:normal; display:block; font-size:12px;}
+#second img, #first img, #third img{display:block; margin:0 auto 4px; height:55px;}
+#second {margin-top:20px; }
+#first {margin-top:0px; }
+#third{margin-top:32px; }
+@media screen and (max-width: 700px) {#braingame_topgamedata .half{display:block; margin:15px auto; width:95%;} }
+@media screen and (max-width: 500px) {#second, #first, #third {padding;0;}  #toptree {background-size: 100%;}}
+
+#braingame_topgamedata .m-rating {width:90%; text-align:left; border-collapse: collapse;}
+#braingame_topgamedata .m-rating td { padding:10px 20px; border-bottom:2px solid white; background:whitesmoke; font-size:15px;}
+#braingame_topgamedata .m-rating tr td:first-child {text-align:left; } 
+#braingame_topgamedata .m-rating tr td:last-child {font-weight:bold;} 
+#braingame_topgamedata .m-rating td a {text-decoration:none;}
+#braingame_topgamedata .m-rating td h3 {font-weight:normal; font-size:16px; padding:0px; margin:5px 0;}
+#braingame_topgamedata .m-rating td ul {padding:0; margin:0; font-weight:normal;}
+#braingame_topgamedata .m-rating td ul li {list-style:none; font-size:13px; margin:4px 0; }
+#braingame_topgamedata .m-rating td ul li a {text-decoration:underline; }
+@media screen and (max-width: 500px) {#main  .m-rating {width:98%;} }
+b.bally {color:gray; display:inline-block; vertical-align:middle; font-size:80%;}
+
+

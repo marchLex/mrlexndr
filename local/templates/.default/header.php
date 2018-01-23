@@ -5,10 +5,11 @@ IncludeTemplateLangFile(__FILE__);
 <head>
 <?$APPLICATION->ShowHead();?>
 <title><?$APPLICATION->ShowTitle()?></title>
+<?include($_SERVER["DOCUMENT_ROOT"] . '/custom-scripts/include_header.php');?>
 </head>
 
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
-
+<?include($_SERVER["DOCUMENT_ROOT"] . '/custom-scripts/include_body.php');?>
 <?$APPLICATION->ShowPanel()?>
 
 <?if($USER->IsAdmin()):?>
